@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1"
+    >
+    <ImageView android:id="@+id/test_image"
+        android:adjustViewBounds="true"
+        android:layout_gravity="center"
+        android:src="@drawable/title" />
+
+    <TableRow>
+        <TextView
+
+            android:layout_height="wrap_content"
+            android:text="账户:"
+           />
+        <EditText
+            android:id="@+id/userName"
+            android:layout_height="wrap_content"
+            android:hint="请输入你的账户"
+            />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="密码:"/>
+        <EditText
+            android:id="@+id/passWord"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="请输入你的密码"
+            />
+    </TableRow>
+
+
+    <TableRow>
+
+    </TableRow>
+
+
+
+<TableRow>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_height="wrap_content"
+        android:layout_span="2"
+        android:text="登陆"/>
+
+</TableRow>
+
+    <TableRow>
+
+        <ImageButton android:id="@+id/settings"
+            android:src="@drawable/ic_settings"/>
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id ="@+id/viewip"
+            />
+    </TableRow>
+  <!--  <TextView  android:id="@+id/sh"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:textColor="#0f0"/>
+        -->
+
+</TableLayout>
